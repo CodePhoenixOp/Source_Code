@@ -32,7 +32,7 @@ app.post("/run", async (req: Request, res: Response) => {
         const { script, language, versionIndex, stdin } = req.body
 
         const response = await axios.post(
-            "https://api.jdoodle.com/v1/execute",
+            "",
             {
                 clientId: process.env.JDOODLE_CLIENT_ID,
                 clientSecret: process.env.JDOODLE_CLIENT_SECRET,

@@ -2,21 +2,6 @@ import { useAppContext } from "@/context/AppContext"
 import { useChatRoom } from "@/context/ChatContext"
 import { SyntheticEvent, useEffect, useRef } from "react"
 
-function ChatList() {
-    const {
-        messages,
-        isNewMessage,
-        setIsNewMessage,
-        lastScrollHeight,
-        setLastScrollHeight,
-    } = useChatRoom()
-    const { currentUser } = useAppContext()
-    const messagesContainerRef = useRef<HTMLDivElement | null>(null)
-
-    const handleScroll = (e: SyntheticEvent) => {
-        const container = e.target as HTMLDivElement
-        setLastScrollHeight(container.scrollTop)
-    }
 
     // Scroll to bottom when messages change
     useEffect(() => {

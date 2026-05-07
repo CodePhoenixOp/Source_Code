@@ -7,7 +7,7 @@ function CoffeeCorner() {
 
     return (
         <a
-            href="http://attendance-dashboard-gilt.vercel.app/"
+            href=""
             className="github-corner"
             aria-label="Coffee Corner"
             target="_blank"

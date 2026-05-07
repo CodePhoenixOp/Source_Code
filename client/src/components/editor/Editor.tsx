@@ -136,22 +136,5 @@ function Editor() {
         }
     }, [filteredUsers])
 
-    return (
-        <CodeMirror
-            ref={editorRef}
-            theme={editorThemes[theme]}
-            onChange={onCodeChange}
-            value={activeFile?.content}
-            extensions={extensions}
-            minHeight="100%"
-            maxWidth="100vw"
-            style={{
-                fontSize: fontSize + "px",
-                height: viewHeight,
-                position: "relative",
-            }}
-        />
-    )
-}
-
+    
 export default Editor

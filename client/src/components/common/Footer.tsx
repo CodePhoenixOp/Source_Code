@@ -4,7 +4,7 @@ function Footer() {
             <span>
                 Build with ❤️ by {"IT - G03  "}
                 <a
-                    href="https://github.com/CodePhoenixOp"
+                    href=""
                     className="text-primary underline underline-offset-1"
                 >
                        Join us on GitHub.
